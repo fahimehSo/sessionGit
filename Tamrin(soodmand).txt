@@ -50,11 +50,10 @@ console.log(total);
 
 
 let obj = {
-    city: "Wonderland",
-    name: "Alice",
+    name: "fahimeh",
     age: null,
-    country: undefined,
-    email: "alice@example.com"
+    city: "mashhad",
+    email: undefined
 };
 
 console.log("Before deleting:", obj);
