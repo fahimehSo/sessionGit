@@ -1,0 +1,70 @@
+///// سوال اول /////
+
+let pow=null
+for(let i=3;i<=5;i++){
+	for(j=1;j<=10;j++){
+	    if(j==3)
+		{
+		   continue
+		}
+    	    pow=i*j
+            console.log(i,"*",j,"=",pow)
+	}
+	console.log(".......................")
+}
+
+
+/////سوال دوم ///////
+
+let orders = {
+    book: {
+        name: "webDesign",
+        model: "JS",
+        price: 25,
+        count: 2
+    },
+    pen: {
+        name: "red Pen",
+        model: "kian",
+        price: 10,
+        count: 3
+    },
+    laptop: {
+        name: "hp",
+        model: "G10",
+        price: 350,
+        count: 5
+    }
+};
+
+let total = 0;
+for (let key in orders) {
+    orders[key].price += 10;
+    total += orders[key].price * orders[key].count;
+}
+console.log(total);
+
+
+
+////سوال سوم ////////
+
+
+let obj = {
+    city: "Wonderland",
+    name: "Alice",
+    age: null,
+    country: undefined,
+    email: "alice@example.com"
+};
+
+console.log("Before deleting:", obj);
+
+
+for (const key in obj) {
+    if (obj[key] === null || obj[key] === undefined) {
+        delete obj[key];
+    }
+}
+
+console.log("After deletion:", obj);
+
