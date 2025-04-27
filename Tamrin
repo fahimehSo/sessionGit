@@ -1,0 +1,55 @@
+/////////تعداد اعداد زوج و فرد را شمارش کنید//////////////
+
+let numbers= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let sumFard=null;
+let sumZoj=null;
+for(i=0;i<numbers.length;i++){
+    if(numbers[i]%2==0){
+        sumZoj+=1;
+    }
+    else{
+        sumFard+=1;
+    }
+}
+ console.log("adad zoj: "+sumZoj);
+ console.log("adad fard: "+sumFard);
+
+//////////. 1قطعه کدی بنویسید که عناصر یک آرایه را با هم جمع کند//////////////
+
+let numbers= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let sum=null;
+for(i=0;i<numbers.length;i++){
+   sum=sum+numbers[i];
+}
+ console.log("Sum of numbers: "+sum);
+
+///////قطعه کدی بنویسید فیبوناچی یک عدد را به صورت آرایه ذخیره و نمایش دهد///////////
+
+let n = 20;
+let fib = [0, 1];
+
+for (let i = 2; i < n; i++) {
+    fib[i] = fib[i - 1] + fib[i - 2];
+}
+console.log(fib.slice(0, n));
+
+/////////قطعه کدی بنویسید که عناصر سوم تا ششم یک آرایه را در هم ضرب کند.//////////
+
+let zarb=[1, 2, 3, 4, 5, 6, 7, 8, 9]; 
+let resultt = 1; 
+
+for (let i = 2; i < 6; i++) { 
+    resultt*=zarb[i];
+}
+
+console.log(resultt);
+
+///////قطعه کدی بنویسید که عنصر دوم تا چهارم یک آرایه را حذف و سپس عدد ۶را به جای آن اضافه کند ////////////
+
+let dell = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; 
+dell.splice(1, 3); 
+
+dell.splice(1, 0, 6);
+
+console.log(dell);
+
