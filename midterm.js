@@ -47,3 +47,12 @@ console.log(calculator.sum(5, 15));
 console.log(calculator.subtract(10, 4)); 
 
 /////سوال چهار //////
+
+function summ(n) {
+    if (n === 1) { 
+        return 1;
+    }
+    return n + summ(n - 1); 
+}
+
+console.log(summ(5)); 
